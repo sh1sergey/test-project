@@ -1,0 +1,35 @@
+@import "./config.scss";
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+%loader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: inline-block;
+
+  width: 40px;
+  height: 40px;
+  margin: auto;
+
+  transform: translateZ(0);
+  animation: rotating 0.7s linear infinite;
+
+  border: 5px solid rgba($blue, 0.3);
+  border-top-color: $blue;
+  border-radius: 50%;
+
+  font-size: 0;
+  line-height: 0;
+}

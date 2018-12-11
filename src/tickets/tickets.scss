@@ -1,0 +1,22 @@
+@import "../core/shared.scss";
+@import "./ticket.scss";
+
+.tickets {
+  width: 570px;
+
+  &__loading {
+    position: relative;
+
+    min-height: 100px;
+
+    &::after {
+      content: "";
+
+      @extend %loader;
+    }
+  }
+
+  &__empty {
+    text-align: center;
+  }
+}

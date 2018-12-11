@@ -1,0 +1,22 @@
+@import "./button.scss";
+
+.button {
+  height: auto;
+  padding: 6px;
+
+  &_buy {
+    display: block;
+
+    font-weight: 600;
+  }
+
+  &_price {
+    display: inline-block;
+
+    margin-top: 3px;
+
+    vertical-align: top;
+
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,115 @@
+@import "../controls/buy-button.scss";
+
+.ticket {
+  display: flex;
+  justify-content: stretch;
+
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
+
+  & + & {
+    margin-top: 20px;
+  }
+
+  &_action {
+    width: 200px;
+    padding: 25px 20px;
+
+    text-align: center;
+
+    border-right: 1px solid $separator-color;
+
+    &_carrier-logo {
+      display: inline-block;
+
+      width: 120px;
+      height: 32px;
+    }
+
+    .button {
+      margin-top: 20px;
+    }
+  }
+
+  &_info {
+    position: relative;
+
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+
+    padding: 25px;
+
+    &_transfer {
+      position: absolute;
+      top: 32px;
+      right: 0;
+      left: 0;
+
+      padding-bottom: 6px;
+
+      text-align: center;
+      text-transform: uppercase;
+
+      font-size: 10px;
+
+      &::before {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+
+        display: block;
+
+        width: 100px;
+        height: 1px;
+        margin-left: -50px;
+
+        content: "";
+
+        background-color: #d5d8d9;
+      }
+
+      &::after {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+
+        display: block;
+
+        width: 16px;
+        height: 16px;
+        margin-top: -7px;
+        margin-left: 34px;
+
+        content: "";
+
+        background-image: url("./images/aircraft-icon.svg");
+        background-size: 16px;
+      }
+    }
+
+    &_point {
+      font-size: 12px;
+
+      &__destination {
+        text-align: right;
+      }
+
+      &_time {
+        font-size: 28px;
+      }
+
+      &_airport {
+        margin-top: 5px;
+
+        font-weight: 600;
+      }
+
+      &_date {
+        color: $gray;
+      }
+    }
+  }
+}
