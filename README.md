@@ -1,4 +1,4 @@
-# Aviasales tes app
+# Aviasales test app
 
 В качестве реализации тестового приложения, решил попробовать добавленный в React 16.3 новый context api.
 
